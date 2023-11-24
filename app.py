@@ -29,11 +29,12 @@ img_lottie_animation = Image.open("images/yt_lottie_animation.jpg")
 # ---- HEADER SECTION ----
 with st.container():
     st.subheader("Hi, I am Sundar :wave:")
-    st.title("CTO of Localhelper")
+    st.title("CTO of Rescalelab")
     st.write(
         "I bring a wealth of experience in steering organizations towards sustainable growth through the strategic integration of cutting-edge technologies."
     )
-    st.write("[Learn More >](https://www.linkedin.com/in/sundararaja25/)")
+    st.write("https://www.linkedin.com/in/sundararaja25/")
+    st.write("https://www.rescalelab.com/")
 
     # ---- WHAT I DO ----
 with st.container():
@@ -65,16 +66,18 @@ with st.container():
         )
        # st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
     with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
+        st.image(img_contact_form)
+        #st_lottie(lottie_coding, height=300, key="coding")
 
 # ---- PROJECTS ----
 with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    image_column, text_column = st.columns((1, 2))
+    image_column, text_column = st.columns((1,2))
     with image_column:
-        st.image(img_lottie_animation)
+        #st.image(img_lottie_animation)
+        st_lottie(lottie_coding, height=300, key="coding")
     with text_column:
         st.subheader("Integrate ChatApp Inside Your Streamlit App")
         st.write(
@@ -83,18 +86,18 @@ with st.container():
             """
         )
        # st.markdown("[Watch Video...](https://youtu.be/TXSOitGoINE)")
-with st.container():
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_contact_form)
-    with text_column:
-        st.subheader("How To Add A Contact Form To Your Streamlit App")
-        st.write(
-            """
-            Want to add a contact form to your Streamlit website?
-            In this video, I'm going to show you how to implement a contact form in your Streamlit app using the free service ‘Form Submit’.
-            """
-        )
+#with st.container():
+#    image_column, text_column = st.columns((1, 2))
+ #   with image_column:
+ #       st.image(img_contact_form)
+ #   with text_column:
+#        st.subheader("How To Add A Contact Form To Your Streamlit App")
+#        st.write(
+#            """
+#           Want to add a contact form to your Streamlit website?
+#            In this video, I'm going to show you how to implement a contact form in your Streamlit app using the free service ‘Form Submit’.
+#            """
+ #       )
         #st.markdown("[Watch Video...](https://youtu.be/FOULV9Xij_8)")
 
 # ---- CONTACT ----
@@ -105,7 +108,7 @@ with st.container():
 
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """
-    <form action="https://formsubmit.co/sundar@localher.in" method="POST">
+    <form action="https://formsubmit.co/sundar0443@live.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
